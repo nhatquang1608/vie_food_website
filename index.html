@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="app">
+
+        <!-- Heading -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <div class="navbar__phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Hotline:0908770095</p>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
+    
+                <!-- navbar-toggler: khi bam se hien ra the div, bam lan nua the div bien mat -->
+                <!-- collapse: bien mat nhu keo rem -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <!-- id de button va div thay nhau -->
+                    <ul class="navbar-nav ml-auto">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <li class="nav-item">Kiểm tra đơn hàng</li>
+                        </a>
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <li class="nav-item">Giỏ hàng</li>
+                        </a>
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <li class="nav-item">Đăng nhập</li>
+                        </a>
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-key"></i>
+                            <li class="nav-item">Đăng ký</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="header__nav">
+            <div class="header__nav-logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="header__search">
+                <input type="text" class="header__search-input" placeholder="Tìm kiếm...">
+                <button class="header__search-btn">
+                    <div class="header__search-btn-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Container -->
+        <div class="container-fluid">
+
+            <!-- Menu -->
+            <nav class="menu">
+                <ul class="menu__list">
+                    <a href="" class="menu__list-link">
+                        <li class="menu__list-item">TRANG CHỦ</li>
+                    </a>
+                    <div class="menu__sep">
+                        <li class="menu__sep-item">/</li>
+                    </div>
+                    <a href="" class="menu__list-link">
+                        <li class="menu__list-item">SẢN PHẨM</li>
+                    </a>
+                    <div class="menu__sep">
+                        <li class="menu__sep-item">/</li>
+                    </div>
+                    <a href="" class="menu__list-link">
+                        <li class="menu__list-item">TIN TỨC</li>
+                    </a>
+                    <div class="menu__sep">
+                        <li class="menu__sep-item">/</li>
+                    </div>
+                    <a href="" class="menu__list-link">
+                        <li class="menu__list-item">GIỚI THIỆU</li>
+                    </a>
+                    <div class="menu__sep">
+                        <li class="menu__sep-item">/</li>
+                    </div>
+                    <a href="" class="menu__list-link">
+                        <li class="menu__list-item">LIÊN HỆ</li>
+                    </a>
+                    <div class="menu__sep">
+                        <li class="menu__sep-item">/</li>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- Slider -->
+            <div class="slides">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/img/slide1.jpg" alt="">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/slide2.jpg" alt="">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" role="button" href="#carouselExampleControls" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" role="button" href="#carouselExampleControls" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="banner">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding: 0">
+                    <img src="assets/img/banner_top.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Owl Carousel -->
+        <div class="container-fluid_padding">
+            <h1>SẢN PHẨM NỔI BẬT</h1>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Seafood_Pasta.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Seafood Pasta</h4>
+                                <p class="card-text">100,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Hamburger.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Hamburger</h4>
+                                <p class="card-text">50,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Fruit_Salad.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Fruit Salad</h4>
+                                <p class="card-text">30,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Chicken_Ball.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Chicken Ball</h4>
+                                <p class="card-text">70,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Pasta.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Pasta</h4>
+                                <p class="card-text">80,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Steak.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Steak</h4>
+                                <p class="card-text">130,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Sausage.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Sausage</h4>
+                                <p class="card-text">40,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/Steamed_Clams.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Steamed Clams</h4>
+                                <p class="card-text">90,000 đ</p>
+                                <a href="" class="btn-buy">
+                                    <div class="card-buy">MUA HÀNG</div>
+                                    <div class="card-buy__icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+
+                    <!-- Product Menu -->
+                    <div class="product__list">
+                        <div class="product__list-title">
+                            <h2>SẢN PHẨM</h2>
+                            <div class="product__list-title-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <ul class="product__list-item">
+                            <a href="">
+                                <li class="product__list-item-title">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h3>THỰC ĐƠN CHÍNH</h3>
+                                </li>
+                            </a>
+                            <hr>
+                            <a href="">
+                                <li class="product__list-item-title">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h3>THỰC ĐƠN ĐẶC BIỆT</h3>
+                                </li>
+                            </a>
+                            <hr>
+                            <a href="">
+                                <li class="product__list-item-title">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h3>CƠM</h3>
+                                </li>
+                            </a>
+                            <hr>
+                            <a href="">
+                                <li class="product__list-item-title">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h3>CHÁO</h3>
+                                </li>
+                            </a>
+                            <hr>
+                            <a href="">
+                                <li class="product__list-item-title">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h3>PHỞ</h3>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <!-- Product News -->
+                    <div class="news__list">
+                        <div class="news__list-title">
+                            <h2>BÀI VIẾT NỔI BẬT</h2>
+                            <div class="news__list-title-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                        <ul class="news__list-item">
+                            <a href="">
+                                <li class="news__list-item-title">
+                                    <div class="news__title">
+                                        <img src="assets/img/Seafood_Pasta.jpg" alt="">
+                                        <p>Tặng 1 suất mỳ hải sản miễn phí cho ngày sinh nhật của bạn</p>
+                                    </div>
+                                    <div class="news__desc">
+                                        <p>Tặng 1 suất mỳ hải sản cỡ M miễn phí cho ngày sinh nhật của bạn, còn đợi gì hãy đến ngay !</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="news__list-item-title">
+                                    <div class="news__title">
+                                        <img src="assets/img/Chicken_Ball.jpg" alt="">
+                                        <p>Khuyến mãi vào thứ 2, thứ 4, thứ 6 hàng tuần</p>
+                                    </div>
+                                    <div class="news__desc">
+                                        <p>Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="news__list-item-title">
+                                    <div class="news__title">
+                                        <img src="assets/img/Hamburger.jpg" alt="">
+                                        <p>Khuyễn mãi khủng mua 1 tặng 1 Hamburger cỡ lớn</p>
+                                    </div>
+                                    <div class="news__desc">
+                                        <p>Khuyến mãi khủng mua 1 tặng 1 áp dụng cho suất Hamburger vào tối chủ nhật</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="news__list-item-title">
+                                    <div class="news__title">
+                                        <img src="assets/img/Fruit_Salad.jpg" alt="">
+                                        <p>Salad hoa quả tươi nhập khẩu chính hãng từ châu Âu</p>
+                                    </div>
+                                    <div class="news__desc">
+                                        <p>Salad hoa quả tươi được nhà hàng nhập khẩu chính hãng từ châu Âu và chế biến kỹ lưỡng</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="news__list-item-title">
+                                    <div class="news__title">
+                                        <img src="assets/img/Steak.jpg" alt="">
+                                        <p>Steak bò Mỹ ăn kèm khoai tây nay được free thêm coca size M</p>
+                                    </div>
+                                    <div class="news__desc">
+                                        <p>Steak bò Mỹ ăn kèm khoai tây nay được free thêm coca size M không giới hạn</p>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+                    <!-- Product Sort -->
+                    <div class="product__sort">
+                        <div class="product__sort-title">
+                            <h2>SẢN PHẨM</h2>
+                        </div>
+                        <div class="product__sort-combobox">
+                            <p>Sắp xếp</p>
+                            <div class="dropdown show">
+                                <a class="btn btn-outline-dark btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Mặc định
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Mặc định</a>
+                                  <a class="dropdown-item" href="#">Giá tăng dần</a>
+                                  <a class="dropdown-item" href="#">Giá giảm dần</a>
+                                  <a class="dropdown-item" href="#">Tên sản phẩm: A to Z</a>
+                                  <a class="dropdown-item" href="#">Tên sản phẩm: Z to A</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <!-- Product List Food -->
+                    <div class="product">
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Seafood_Pasta.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Seafood Pasta</h4>
+                                        <p class="card-text">100,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Hamburger.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Hamburger</h4>
+                                        <p class="card-text">50,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Fruit_Salad.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Fruit Salad</h4>
+                                        <p class="card-text">30,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Chicken_Ball.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Chicken Ball</h4>
+                                        <p class="card-text">70,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Pasta.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Pasta</h4>
+                                        <p class="card-text">80,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Steak.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Steak</h4>
+                                        <p class="card-text">130,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Sausage.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Sausage</h4>
+                                        <p class="card-text">40,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" style="margin-top: 32px">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Steamed_Clams.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Steamed Clams</h4>
+                                        <p class="card-text">90,000 đ</p>
+                                        <a href="" class="btn-buy">
+                                            <div class="card-buy">MUA HÀNG</div>
+                                            <div class="card-buy__icon">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paging -->
+                    <div class="product__paging">
+                        <div class="product__page">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                  <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                  </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- News -->
+                    <div class="news">
+                        <h2>TIN ẨM THỰC</h2>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Seafood_Pasta.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Tặng 1 suất mỳ hải sản miễn phí cho ngày sinh nhật của bạn</h4>
+                                    </a>
+                                    <h6 class="card-text">Tặng 1 suất mỳ hải sản miễn phí cho ngày sinh nhật của bạn</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Hamburger.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Khuyến mãi khủng mua 1 tặng 1 áp dụng cho suất Hamburger vào tối chủ nhật</h4>
+                                    </a>
+                                    <h6 class="card-text">Khuyến mãi khủng mua 1 tặng 1 áp dụng cho suất Hamburger vào tối chủ nhật</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Fruit_Salad.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Salad hoa quả tươi được nhà hàng nhập khẩu chính hãng từ châu Âu và chế biến kỹ lưỡng</h4>
+                                    </a>
+                                    <h6 class="card-text">Salad hoa quả tươi được nhà hàng nhập khẩu chính hãng từ châu Âu và chế biến kỹ lưỡng</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Chicken_Ball.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</h4>
+                                    </a>
+                                    <h6 class="card-text">Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Pasta.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</h4>
+                                    </a>
+                                    <h6 class="card-text">Tặng 1 suất mỳ hải sản miễn phí cho ngày sinh nhật của bạn</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Steak.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Steak bò Mỹ ăn kèm khoai tây nay được free thêm coca size M không giới hạn</h4>
+                                    </a>
+                                    <h6 class="card-text">Steak bò Mỹ ăn kèm khoai tây nay được free thêm coca size M không giới hạn</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Sausage.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</h4>
+                                    </a>
+                                    <h6 class="card-text">Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-product">
+                            <div class="card">
+                                <img class="card-img-top" style="height: 150px" src="assets/img/Steamed_Clams.jpg" alt="">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title">Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</h4>
+                                    </a>
+                                    <h6 class="card-text">Khuyến mãi 30% cho mọi món vào thứ 2, thứ 4, thứ 6 hàng tuần khi checkin tại quán</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__top-img">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <div class="footer__top-description">
+                    <ul class="footer__top-item">
+                        <li class="footer__top-intro">
+                            <h2>GIỚI THIỆU</h2>
+                            <ul class="footer__top-items">
+                                <a style="font-weight: 700" href="">
+                                    <li class="footer__top-items-content">Về chúng tôi</li>
+                                </a>
+                                <a href="">
+                                    <li class="footer__top-items-content">Lĩnh vực hoạt động</li>
+                                </a>
+                                <a href="">
+                                    <li class="footer__top-items-content">Liên hệ với chúng tôi</li>
+                                </a>
+                                <a href="">
+                                    <li class="footer__top-items-content">Tin tức - Sự kiện</li>
+                                </a>
+                                <a href="">
+                                    <li class="footer__top-items-content">Quy định bảo hành - Đổi trả</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li class="footer__top-intro">
+                            <h2>CHĂM SÓC KHÁCH HÀNG</h2>
+                            <ul class="footer__top-items">
+                                <a style="font-weight: 700" href="">
+                                    <li class="footer__top-items-content">Hướng dẫn mua hàng</li>
+                                </a>
+                                <a href="">
+                                    <li class="footer__top-items-content">Quy định đổi trả</li>
+                                </a>
+                                <a href="">
+                                    <li class="footer__top-items-content">Chính sách bán hàng</li>
+                                </a>
+                                <a href="">
+                                    <li class="footer__top-items-content">Chính sách bảo mật</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li class="footer__top-intro">
+                            <h2>FACEBOOK</h2>
+                            <ul class="footer__top-items">
+                                <div class="footer__top-items-icon">
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>© 2017, RUNTIME Store</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            dots: false,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplaySpeed:1000,
+            autoplayHoverPause:true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+</html>
